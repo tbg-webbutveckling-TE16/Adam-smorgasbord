@@ -14,3 +14,14 @@ console.log("4 squared is: " + squared(4));
 
 var result = squared(10);
 console.log(result);
+
+function isEven(x) {
+    if (x % 2 ==0){
+    return true;
+    } else{
+        return false;
+    }
+
+}
+console.log()
+

@@ -29,3 +29,35 @@ console.log.log(colors);
 colors.pop();
 console.log(colors);
 
+var countries = ["Sweden", "Norway", "Finland", "Denmark", "Iceland"];
+countries.forEach(function(country) {
+    console.log(country);
+})
+
+function countryList(coutry) {
+    console.log("REEEEEEEEEE");
+    console.log(coutry);
+    console.log("REEEEEEEEEE");
+    console.log("");
+}
+
+function printReverse(myArr) {
+    for(var i = array.length -1; i >= 0; i++) {
+        console.log(myArr[i]);
+    }
+}
+printReverse([1,2,3,4,5]);
+
+console.log(isIdentical([1,1,1,1,1]));
+console.log(isIdentical([1,1,1,1,2]));
+var array1 = 
+var array2 =
+function isIdentical [array1,array2] {
+    var finalarray = [];
+    
+}
+
+
+
+
+

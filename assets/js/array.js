@@ -50,14 +50,27 @@ printReverse([1,2,3,4,5]);
 
 console.log(isIdentical([1,1,1,1,1]));
 console.log(isIdentical([1,1,1,1,2]));
-var array1 = 
-var array2 =
-function isIdentical [array1,array2] {
-    var finalarray = [];
+// var array1 = ;
+// var array2 =;
+function isIdentical (array) {
+    var first = array[0];
+    for(var i = 0; i<=array.length; i++) {
+        if (array[i] =first);
+        return true;
+    }
     
 }
 
+console.log(isIdentical([1,1,1,1,1]));
+console.log(isIdentical([1,1,1,1,2]));
 
-
-
+function sumarray(array){
+    var Final = 0;
+    for(var i = 0; i < array.length; i++)
+        { 
+            Final = Final + array[i];
+        }
+    return Final;
+ }
+console.log(sumarray([1,5,123,4,2,1]));
 

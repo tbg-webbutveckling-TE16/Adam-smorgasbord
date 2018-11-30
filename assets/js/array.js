@@ -74,3 +74,8 @@ function sumarray(array){
  }
 console.log(sumarray([1,5,123,4,2,1]));
 
+
+function sumMax(array){
+    }
+}
+

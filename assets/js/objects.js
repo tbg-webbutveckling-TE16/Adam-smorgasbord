@@ -38,7 +38,7 @@ var cat = new Object();
 cat.name = "XD";
 cat.breed = "Nej";
 cat.age = 2;
-cat.isLaze = true;
+cat.isLazy = true;
 
 var junkObject = {
     name: "Yes",

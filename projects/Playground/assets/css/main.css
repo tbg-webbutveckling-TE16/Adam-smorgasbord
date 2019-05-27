@@ -4,33 +4,32 @@ body{
 }
 .grid-container { 
     display: grid;
-    grid-template-columns: 280px 280px 280px;
-    background-color: rgb(58, 58, 58);
+    grid-template-columns: 400px 400px 400px;
     padding: 8px;
-    height: 580px;
+    height: 480px;
 }
 .box1 {
-    background-color: rgb(211, 51, 51)
+    background-color: rgb(211, 51, 51);
 }
 
 .box2 {
-    background-color: rgb(48, 219, 85)
+    background-color: rgb(48, 219, 85);
 }
 
 .box3 {
-    background-color: rgb(47, 185, 219)    
+    background-color: rgb(47, 185, 219);  
 }
 
 .box4 {
-    background-color: rgb(138, 47, 212)
+    background-color: rgb(138, 47, 212);
 }
 
 .box5 {
-    background-color: rgb(223, 43, 148)
+    background-color: rgb(223, 43, 148);
 }
 
 .box6 {
-    background-color: rgb(219, 217, 53)
+    background-color: rgb(219, 217, 53);
 }
 
 .grid-items {
@@ -43,31 +42,74 @@ body{
 
 }
 .toggle {
-    background-color: rgb(255, 255, 255)
+    background-color: white;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", sans-serif;
-    font-size: 20pt;
-    font-weight: normal;
-    background: lightblue; 
-    background: linear-gradient(-90deg, lightblue, black);
-  }
   
-  .main {
+.main {
     margin: 100px auto;
     text-align: center;
-  }
+}
   
-  button {
-    padding: 20px;
+button {
+    padding: 68px;
     background: transparent;
     text-shadow: 1px 1px 1px #202020;
     font-family: "Lato", sans-serif;
     font-size: 18pt;
     border: 1px solid lightblue;
     color: lightblue;
-  }
+}
   
+.click-three {
+	font-size: 2vmax;
+}
+#lightbox {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.3);
+	display: none;
+}
+
+#lightbox.open {
+	display: block;
+}
+
+#lightbox_content {
+	position: absolute;
+	width: 500px;
+	height: 300px;
+	background: #ffffff;
+	border-radius: 5px;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+    margin-top: -200px;
+    font-size: 20px;
+}
+
+#exit {
+    cursor:pointer;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 20px;
+	top: 20px;
+	text-align: center;
+	color: black;
+	
+	
+	
+}
+
+.rotate {
+    transform: rotate(360deg);
+    transition-duration: 2s;
+}
+
+.click-four {
+    width: 400px;
+    height: 200px;
+}

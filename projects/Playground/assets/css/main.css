@@ -51,7 +51,7 @@ body{
 }
   
 button {
-    padding: 68px;
+    padding: 67px;
     background: transparent;
     text-shadow: 1px 1px 1px #202020;
     font-family: "Lato", sans-serif;
@@ -112,4 +112,16 @@ button {
 .click-four {
     width: 400px;
     height: 200px;
+}
+
+
+.clock {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 40px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
 }

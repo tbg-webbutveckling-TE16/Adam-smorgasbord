@@ -1,15 +1,15 @@
 //Clicker Counter
-var button = document.getElementById("click-one");
+var button1 = document.getElementById("click-one");
   count = 0;
-button.onclick = function() {
+button1.onclick = function() {
   count += 1;
-  button.innerHTML = "Click me: " + count;
+  button1.innerHTML = "Click me: " + count;
 };
 
 //NightMode
-var button = document.getElementById("click-two");
+var button2 = document.getElementById("click-two");
 
-button.addEventListener("click", function() {
+button2.addEventListener("click", function() {
     document.getElementsByTagName("body")[0].classList.toggle("toggle");
 });
 
@@ -34,3 +34,56 @@ var spinbtn = document.getElementById("click-four");
 spinbtn.addEventListener("click", function() {
   document.getElementById("2sec").classList.toggle("rotate");
 });
+//Clock
+function showTime(){
+  var date = new Date();
+  var h = date.getHours(); 
+  var m = date.getMinutes(); 
+  var s = date.getSeconds(); 
+  var session = "AM";
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("clock-five").innerText = time;
+  document.getElementById("clock-five").textContent = time;
+  
+  setTimeout(showTime, 1000);
+  
+}
+
+showTime();
+//Timer
+function startTimer(duration, display) {
+  var timer = duration, minutes, seconds;
+  setInterval(function () {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = minutes + ":" + seconds;
+
+      if (--timer < 0) {
+          timer = duration;
+      }
+  }, 1000);
+}
+
+window.onload = function () {
+  var fiveMinutes = 60 * 5,
+      display = document.querySelector('#click-six');
+  startTimer(fiveMinutes, display);
+};

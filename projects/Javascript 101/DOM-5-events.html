@@ -7,12 +7,13 @@
     <title>You Better Score</title>
 </head>
 <body>
-    <h1><span id="Player1">0</span> To <span id="Player2">0</span></h1>
-    <p>Playing to: <span id=playingto></span></p>
-    <input type="number" min="0" max="7">
-    <button id="P1">Player 1</button>
-    <button id="P2">Player 2</button>
-    <button id="R">Reset</button>
+    <h1><span class="player1">0</span> to <span class="player2">0</span></h1>
+        <ul>Playing to: <span class="goal">1</span></ul>
+        <input type="number" min="1" max="10">
+        <button class="btnPlayer1">player 1</button>
+        <button class="btnPlayer2">player 2</button>
+        <button class="btnReset" onClick="document.location.reload(true)">reset</button>
+        <h1></h1>
 
     <script src="assets/js/DOM-5-scorekeeper.js" type="text/javascript"></script>
 </body>

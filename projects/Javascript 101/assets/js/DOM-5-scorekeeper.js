@@ -1,30 +1,51 @@
+var button1 = document.querySelector(".button1");
+var player1 = document.querySelector(".player1");
 var score1 = 0;
+var button2 = document.querySelector(".button2");
+var player2 = document.querySelector(".player2");
 var score2 = 0;
+var Winner = 0;
+var input = document.getElementsByTagName("input")[0]
+var ScoreToWin = document.getElementsByClassName("Win")[0]
+var totalScore = document.getElementsByTagName("input")[0]
 
-var p1display = document.getElementById("Player1")
-var p2display = document.getElementById("Player2")
-var reset = document.getElementById("R")
-var p1button = document.getElementById("P1")
-var p2button = document.getElementById("P2")
+input.addEventListener("click", function() {
+    ScoreToWin.innerHTML = input.value;
+    totalScore = Number(input.value)
+})
+button1.addEventListener("click", function(){
+    
+    if(score1 < totalScore) {
+        score1++;
+        if(score1 === totalScore) {
+            Winner = 1;
+            document.querySelectorAll("h1")[1].innerHTML = "PLAYER " + Winner + " GOOD";
+        }
+    }
 
-p1button.addEventListener("click", function (){
-    score1++
-    p1display.innerHTML = score1
+    player1.innerHTML = score1;
+
+    
+
 })
-p2button.addEventListener("click", function (){
-    score2++
-    p2display.innerHTML = score2
+
+button2.addEventListener("click", function(){
+
+    if(score2 < totalScore) {
+        score2++;
+        if(score2 === totalScore) {
+            Winner = 2;
+            document.querySelectorAll("h1")[1].innerHTML = "PLAYER " + Winner + " GOOD";
+
+        }
+    }
+               
+    player2.innerHTML = score2;
 })
-reset.addEventListener("click", function (){
-    score1 = 0
-    p1display.innerHTML = score1
-    score2 = 0
-    p2display.innerHTML = score2
-})
-if (score1 === playingto){
-    Console.writeLine("Yes1")
-}
-if (score2 === playingto){
-    Console.writeLine("Yes2")
-}
+
+
+
+
+
+
 
